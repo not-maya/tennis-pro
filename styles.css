@@ -1535,87 +1535,782 @@ body {
     letter-spacing: 1px;
 }
 
-/* Responsive Design */
+/* Mobile-First Responsive Design */
 @media (max-width: 768px) {
+    /* Header Mobile */
+    .header {
+        border-radius: 0;
+    }
+    
     .nav {
         flex-direction: column;
-        gap: 1rem;
-        padding: 1rem;
+        gap: 0.5rem;
+        padding: 0.8rem 1rem;
+    }
+    
+    .nav-brand h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
     
     .nav-links {
-        gap: 1rem;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        font-size: 0.75rem;
+        padding: 0.6rem 1rem;
+        margin: 0.2rem;
+    }
+    
+    /* Hero Mobile */
+    .hero {
+        padding: 100px 0 40px;
+        min-height: auto;
     }
     
     .hero-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
+        padding: 0 1rem;
     }
     
     .hero h2 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        text-align: center;
     }
     
     .hero p {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .tennis-court {
+        width: 200px;
+        height: 130px;
+    }
+    
+    .ball-trajectory {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .player-silhouette {
+        width: 30px;
+        height: 45px;
+    }
+    
+    /* Sections Mobile */
+    .journey-section, .legends-section, .brands-section, .grips-section, .game-section, .tips-section {
+        padding: 40px 0;
     }
     
     .section-title {
         font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    /* Story Sections Mobile */
+    .story-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .story-content h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
     }
     
     .story-content p {
+        font-size: 1rem;
         column-count: 1;
+        margin-bottom: 1.5rem;
     }
     
+    /* Grip Visual Mobile */
+    .grip-visual {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    .racket-handle {
+        width: 60px;
+        height: 150px;
+    }
+    
+    .grip-bevels {
+        width: 45px;
+        height: 120px;
+    }
+    
+    .bevel {
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+    .grip-info {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .grip-info h3 {
+        font-size: 1.4rem;
+    }
+    
+    .grip-info p {
+        font-size: 1rem;
+    }
+    
+    /* Timeline Mobile */
     .progression-timeline {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 2rem 0;
+        padding: 1.5rem 0;
     }
     
+    .timeline-item {
+        padding: 1rem;
+    }
+    
+    .timeline-icon {
+        font-size: 2rem;
+    }
+    
+    .timeline-item h4 {
+        font-size: 1rem;
+    }
+    
+    .timeline-item p {
+        font-size: 0.8rem;
+    }
+    
+    /* Court Gallery Mobile */
     .court-gallery {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        margin: 2rem 0;
+        padding: 1.5rem;
     }
     
-    .grip-showcase {
-        grid-template-columns: 1fr;
+    .court-card {
+        padding: 1rem;
     }
     
+    .court-surface {
+        height: 60px;
+    }
+    
+    .court-card h4 {
+        font-size: 1rem;
+    }
+    
+    .court-card p {
+        font-size: 0.8rem;
+    }
+    
+    /* Players Grid Mobile */
     .players-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
+    .player-card {
+        padding: 1.5rem;
+    }
+    
+    .player-image {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1rem;
+    }
+    
+    .player-silhouette {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .player-silhouette::before {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .player-info h4 {
+        font-size: 1.3rem;
+    }
+    
+    .player-stats {
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .stat {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .player-description {
+        font-size: 0.9rem;
+    }
+    
+    .playing-style {
+        font-size: 0.85rem;
+        padding: 0.8rem;
+    }
+    
+    /* Brands Mobile */
     .brands-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .brand-card {
+        padding: 1.5rem;
+    }
+    
+    .brand-logo {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 1rem;
+    }
+    
+    .brand-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .brand-info p {
+        font-size: 0.8rem;
+    }
+    
+    .brand-description {
+        font-size: 0.9rem;
     }
     
     .strings-info, .surface-info {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
-    .tips-grid {
+    .string-type, .surface-card {
+        padding: 1rem;
+    }
+    
+    .string-type h4, .surface-card h4 {
+        font-size: 1rem;
+    }
+    
+    .string-type p, .surface-card p {
+        font-size: 0.8rem;
+    }
+    
+    /* Grip Showcase Mobile */
+    .grip-showcase {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .racket-3d {
+        width: 150px;
+        height: 220px;
+    }
+    
+    .racket-head {
+        width: 90px;
+        height: 60px;
+    }
+    
+    .racket-shaft {
+        width: 6px;
+        height: 90px;
+    }
+    
+    .racket-handle-3d {
+        width: 45px;
+        height: 75px;
+    }
+    
+    .handle-bevels {
+        width: 35px;
+        height: 60px;
+    }
+    
+    .bevel-3d {
+        height: 15px;
+    }
+    
+    .grip-selector {
+        gap: 0.5rem;
+    }
+    
+    .grip-btn {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+    
+    .grip-info-panel h3 {
+        font-size: 1.5rem;
+    }
+    
+    .hand-grip {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .thumb-position {
+        width: 15px;
+        height: 20px;
+    }
+    
+    .index-knuckle {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .attr-label {
+        font-size: 0.8rem;
+        min-width: 60px;
+    }
+    
+    #selected-grip-description {
+        font-size: 0.9rem;
+    }
+    
+    /* Game Mobile */
+    .game-container {
+        padding: 1.5rem;
     }
     
     .game-header {
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.8rem;
+        padding: 0.8rem;
+    }
+    
+    .score-display, .level-display, .streak-display {
+        font-size: 0.9rem;
+    }
+    
+    #score, #level, #streak {
+        font-size: 1.2rem;
+    }
+    
+    .situation-card {
+        padding: 1.5rem;
+    }
+    
+    .situation-icon {
+        font-size: 2rem;
+    }
+    
+    #situation-text {
+        font-size: 1rem;
     }
     
     .grip-options {
         grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+    
+    .grip-option {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .feedback-content {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+    
+    .next-question-btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+    
+    .start-game-btn, .reset-game-btn {
+        font-size: 1rem;
+        padding: 12px 24px;
+        margin: 0.5rem;
+    }
+    
+    /* Tips Mobile */
+    .tips-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .tip-card {
+        padding: 1.5rem;
+    }
+    
+    .tip-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .tip-card p {
+        font-size: 0.9rem;
+    }
+    
+    /* Footer Mobile */
+    .footer {
+        padding: 1.5rem 0;
+    }
+    
+    .footer p {
+        font-size: 0.9rem;
     }
 }
 
+/* Extra Small Mobile Devices */
 @media (max-width: 480px) {
+    /* Header Extra Small */
+    .nav-brand h1 {
+        font-size: 1.2rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.8rem;
+    }
+    
+    /* Hero Extra Small */
     .hero {
-        padding: 100px 0 60px;
+        padding: 80px 0 30px;
     }
     
     .hero h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
     }
     
-    .fact-card, .grip-card, .tip-card {
-        padding: 1.5rem;
+    .hero p {
+        font-size: 0.9rem;
+    }
+    
+    .tennis-court {
+        width: 150px;
+        height: 100px;
+    }
+    
+    .ball-trajectory {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .player-silhouette {
+        width: 25px;
+        height: 35px;
+    }
+    
+    /* Sections Extra Small */
+    .journey-section, .legends-section, .brands-section, .grips-section, .game-section, .tips-section {
+        padding: 30px 0;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Story Sections Extra Small */
+    .story-section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .story-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .story-content p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    /* Grip Visual Extra Small */
+    .racket-handle {
+        width: 50px;
+        height: 120px;
+    }
+    
+    .grip-bevels {
+        width: 35px;
+        height: 90px;
+    }
+    
+    .bevel {
+        height: 22px;
+        font-size: 0.7rem;
+    }
+    
+    .grip-info h3 {
+        font-size: 1.2rem;
+    }
+    
+    .grip-info p {
+        font-size: 0.9rem;
+    }
+    
+    /* Timeline Extra Small */
+    .timeline-item {
+        padding: 0.8rem;
+    }
+    
+    .timeline-icon {
+        font-size: 1.5rem;
+    }
+    
+    .timeline-item h4 {
+        font-size: 0.9rem;
+    }
+    
+    .timeline-item p {
+        font-size: 0.75rem;
+    }
+    
+    /* Court Gallery Extra Small */
+    .court-gallery {
+        padding: 1rem;
+        margin: 1.5rem 0;
+    }
+    
+    .court-card {
+        padding: 0.8rem;
+    }
+    
+    .court-surface {
+        height: 50px;
+    }
+    
+    .court-card h4 {
+        font-size: 0.9rem;
+    }
+    
+    .court-card p {
+        font-size: 0.75rem;
+    }
+    
+    /* Players Extra Small */
+    .player-card {
+        padding: 1rem;
+    }
+    
+    .player-image {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto 0.8rem;
+    }
+    
+    .player-silhouette {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .player-silhouette::before {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .player-info h4 {
+        font-size: 1.1rem;
+    }
+    
+    .stat {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+    }
+    
+    .player-description {
+        font-size: 0.8rem;
+    }
+    
+    .playing-style {
+        font-size: 0.75rem;
+        padding: 0.6rem;
+    }
+    
+    /* Brands Extra Small */
+    .brand-card {
+        padding: 1rem;
+    }
+    
+    .brand-logo {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 0.8rem;
+    }
+    
+    .brand-card h4 {
+        font-size: 1rem;
+    }
+    
+    .brand-info p {
+        font-size: 0.75rem;
+    }
+    
+    .brand-description {
+        font-size: 0.8rem;
+    }
+    
+    .string-type, .surface-card {
+        padding: 0.8rem;
+    }
+    
+    .string-type h4, .surface-card h4 {
+        font-size: 0.9rem;
+    }
+    
+    .string-type p, .surface-card p {
+        font-size: 0.75rem;
+    }
+    
+    /* Grip Showcase Extra Small */
+    .racket-3d {
+        width: 120px;
+        height: 180px;
+    }
+    
+    .racket-head {
+        width: 70px;
+        height: 45px;
+    }
+    
+    .racket-shaft {
+        width: 4px;
+        height: 70px;
+    }
+    
+    .racket-handle-3d {
+        width: 35px;
+        height: 60px;
+    }
+    
+    .handle-bevels {
+        width: 25px;
+        height: 45px;
+    }
+    
+    .bevel-3d {
+        height: 11px;
+    }
+    
+    .grip-btn {
+        font-size: 0.7rem;
+        padding: 6px 10px;
+    }
+    
+    .grip-info-panel h3 {
+        font-size: 1.3rem;
+    }
+    
+    .hand-grip {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .thumb-position {
+        width: 12px;
+        height: 15px;
+    }
+    
+    .index-knuckle {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .attr-label {
+        font-size: 0.75rem;
+        min-width: 50px;
+    }
+    
+    #selected-grip-description {
+        font-size: 0.8rem;
+    }
+    
+    /* Game Extra Small */
+    .game-container {
+        padding: 1rem;
+    }
+    
+    .game-header {
+        padding: 0.6rem;
+    }
+    
+    .score-display, .level-display, .streak-display {
+        font-size: 0.8rem;
+    }
+    
+    #score, #level, #streak {
+        font-size: 1rem;
+    }
+    
+    .situation-card {
+        padding: 1rem;
+    }
+    
+    .situation-icon {
+        font-size: 1.5rem;
+    }
+    
+    #situation-text {
+        font-size: 0.9rem;
+    }
+    
+    .grip-option {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+    
+    .feedback-content {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+    
+    .next-question-btn {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+    
+    .start-game-btn, .reset-game-btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        margin: 0.3rem;
+    }
+    
+    /* Tips Extra Small */
+    .tip-card {
+        padding: 1rem;
+    }
+    
+    .tip-card h3 {
+        font-size: 1rem;
+    }
+    
+    .tip-card p {
+        font-size: 0.8rem;
+    }
+    
+    /* Footer Extra Small */
+    .footer {
+        padding: 1rem 0;
+    }
+    
+    .footer p {
+        font-size: 0.8rem;
     }
 }
