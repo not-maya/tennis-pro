@@ -1,0 +1,25 @@
+{
+  "name": "tennis-pro-website",
+  "version": "1.0.0",
+  "description": "A comprehensive tennis education website with interactive features",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step needed for static site'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "tennis",
+    "education",
+    "sports",
+    "interactive",
+    "grips",
+    "legends",
+    "equipment"
+  ],
+  "author": "Tennis Pro",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}

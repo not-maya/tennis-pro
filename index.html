@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Facts & Grip Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <h1>🎾 Tennis Pro</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#grips">Grip Art</a></li>
+                <li><a href="#legends">Legends</a></li>
+                <li><a href="#brands">Brands</a></li>
+                <li><a href="#game">Mini Game</a></li>
+                <li><a href="#tips">Wisdom</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>The Art of Tennis</h2>
+                    <p>From the thunderous serve to the delicate drop shot, every stroke tells a story. Discover the poetry in motion that defines this beautiful game.</p>
+                    <button class="cta-button" onclick="scrollToSection('journey')">Begin Your Journey</button>
+                </div>
+                <div class="hero-visual">
+                    <div class="tennis-court">
+                        <div class="court-lines"></div>
+                        <div class="ball-trajectory"></div>
+                        <div class="player-silhouette"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="journey" class="journey-section">
+            <div class="container">
+                <div class="story-flow">
+                    <div class="story-section">
+                        <div class="story-content">
+                            <h2>The Foundation: Understanding Your Grip</h2>
+                            <p>Every tennis journey begins with the fundamental connection between player and racket. Your grip is more than just how you hold the racket—it's the foundation of your entire game, the bridge between intention and execution.</p>
+                            <div class="grip-visual">
+                                <div class="racket-handle">
+                                    <div class="grip-bevels">
+                                        <div class="bevel active" data-grip="continental">1</div>
+                                        <div class="bevel" data-grip="eastern">2</div>
+                                        <div class="bevel" data-grip="semi-western">3</div>
+                                        <div class="bevel" data-grip="western">4</div>
+                                    </div>
+                                </div>
+                                <div class="grip-info">
+                                    <h3 id="grip-name">Continental Grip</h3>
+                                    <p id="grip-description">The universal grip for serves, volleys, and overheads. Like shaking hands with the racket.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <div class="story-content">
+                            <h2>The Evolution: From Beginner to Champion</h2>
+                            <p>As you progress in tennis, your grip evolves with your game. What starts as a simple Eastern forehand transforms into the sophisticated Semi-Western of modern champions, each grip telling the story of your tennis development.</p>
+                            <div class="progression-timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">🌱</div>
+                                    <h4>Beginner</h4>
+                                    <p>Eastern Forehand<br>Two-Handed Backhand</p>
+                                </div>
+                                <div class="timeline-arrow">→</div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">🌿</div>
+                                    <h4>Intermediate</h4>
+                                    <p>Semi-Western<br>Continental Serve</p>
+                                </div>
+                                <div class="timeline-arrow">→</div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">🌳</div>
+                                    <h4>Advanced</h4>
+                                    <p>Western Topspin<br>One-Handed Backhand</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="story-section">
+                        <div class="story-content">
+                            <h2>Different Courts, Different Stories</h2>
+                            <p>Each surface tells a different story, demanding different grips and strategies. The clay court's slow bounce favors topspin, while grass rewards the flat, aggressive shot.</p>
+                            <div class="court-gallery">
+                                <div class="court-card clay">
+                                    <div class="court-surface"></div>
+                                    <h4>Clay Court</h4>
+                                    <p>Heavy topspin with Western grip</p>
+                                </div>
+                                <div class="court-card grass">
+                                    <div class="court-surface"></div>
+                                    <h4>Grass Court</h4>
+                                    <p>Flat shots with Eastern grip</p>
+                                </div>
+                                <div class="court-card hard">
+                                    <div class="court-surface"></div>
+                                    <h4>Hard Court</h4>
+                                    <p>Versatile Semi-Western grip</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="legends" class="legends-section">
+            <div class="container">
+                <h2 class="section-title">Tennis Legends Through The Ages</h2>
+                <p class="section-subtitle">Understanding the evolution of tennis through its greatest champions</p>
+                
+                <div class="legends-timeline">
+                    <div class="era-section">
+                        <div class="era-header">
+                            <h3>The Golden Era (1960s-1980s)</h3>
+                            <div class="era-line"></div>
+                        </div>
+                        <div class="players-grid">
+                            <div class="player-card">
+                                <div class="player-image">
+                                    <div class="player-silhouette rod-laver"></div>
+                                </div>
+                                <div class="player-info">
+                                    <h4>Rod Laver</h4>
+                                    <div class="player-stats">
+                                        <span class="stat">11 Grand Slams</span>
+                                        <span class="stat">1962 & 1969 Calendar Grand Slam</span>
+                                    </div>
+                                    <p class="player-description">The only player to achieve the Calendar Grand Slam twice. Known for his powerful left-handed game and exceptional court coverage. His playing style revolutionized the sport with aggressive baseline play.</p>
+                                    <div class="playing-style">
+                                        <strong>Signature:</strong> Left-handed power, exceptional footwork, all-court game
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="player-card">
+                                <div class="player-image">
+                                    <div class="player-silhouette bjorn-borg"></div>
+                                </div>
+                                <div class="player-info">
+                                    <h4>Björn Borg</h4>
+                                    <div class="player-stats">
+                                        <span class="stat">11 Grand Slams</span>
+                                        <span class="stat">5 Wimbledon, 6 French Open</span>
+                                    </div>
+                                    <p class="player-description">The "Ice Man" dominated with his two-handed backhand and incredible mental toughness. His rivalry with McEnroe defined an era and brought tennis to new heights of popularity.</p>
+                                    <div class="playing-style">
+                                        <strong>Signature:</strong> Two-handed backhand, topspin forehand, mental fortitude
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="player-card">
+                                <div class="player-image">
+                                    <div class="player-silhouette john-mcenroe"></div>
+                                </div>
+                                <div class="player-info">
+                                    <h4>John McEnroe</h4>
+                                    <div class="player-stats">
+                                        <span class="stat">7 Grand Slams</span>
+                                        <span class="stat">3 Wimbledon, 4 US Open</span>
+                                    </div>
+                                    <p class="player-description">"Superbrat" revolutionized serve-and-volley tennis with his touch, creativity, and fiery personality. His technical precision and net play remain unmatched in the modern game.</p>
+                                    <div class="playing-style">
+                                        <strong>Signature:</strong> Serve-and-volley, touch shots, left-handed variety
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="era-section">
+                        <div class="era-header">
+                            <h3>The Modern Era (1990s-2000s)</h3>
+                            <div class="era-line"></div>
+                        </div>
+                        <div class="players-grid">
+                            <div class="player-card">
+                                <div class="player-image">
+                                    <div class="player-silhouette pete-sampras"></div>
+                                </div>
+                                <div class="player-info">
+                                    <h4>Pete Sampras</h4>
+                                    <div class="player-stats">
+                                        <span class="stat">14 Grand Slams</span>
+                                        <span class="stat">7 Wimbledon, 5 US Open</span>
+                                    </div>
+                                    <p class="player-description">"Pistol Pete" dominated with his powerful serve and athleticism. His 14 Grand Slam record stood for years, and his all-court game set the standard for modern tennis.</p>
+                                    <div class="playing-style">
+                                        <strong>Signature:</strong> Powerful serve, running forehand, net play
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="player-card">
+                                <div class="player-image">
+                                    <div class="player-silhouette andre-agassi"></div>
+                                </div>
+                                <div class="player-info">
+                                    <h4>Andre Agassi</h4>
+                                    <div class="player-stats">
+                                        <span class="stat">8 Grand Slams</span>
+                                        <span class="stat">Career Golden Slam</span>
+                                    </div>
+                                    <p class="player-description">The "Las Vegas Kid" revolutionized tennis with his baseline power and return game. His career comeback story and groundstroke technique influenced generations of players.</p>
+                                    <div class="playing-style">
+                                        <strong>Signature:</strong> Return of serve, groundstroke power, court positioning
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="player-card">
+                                <div class="player-image">
+                                    <div class="player-silhouette steffi-graf"></div>
+                                </div>
+                                <div class="player-info">
+                                    <h4>Steffi Graf</h4>
+                                    <div class="player-stats">
+                                        <span class="stat">22 Grand Slams</span>
+                                        <span class="stat">1988 Calendar Golden Slam</span>
+                                    </div>
+                                    <p class="player-description">"Fräulein Forehand" dominated women's tennis with her powerful forehand and athleticism. Her 1988 Golden Slam remains one of tennis's greatest achievements.</p>
+                                    <div class="playing-style">
+                                        <strong>Signature:</strong> Inside-out forehand, court coverage, mental strength
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="era-section">
+                        <div class="era-header">
+                            <h3>The Big Three Era (2000s-Present)</h3>
+                            <div class="era-line"></div>
+                        </div>
+                        <div class="players-grid">
+                            <div class="player-card">
+                                <div class="player-image">
+                                    <div class="player-silhouette roger-federer"></div>
+                                </div>
+                                <div class="player-info">
+                                    <h4>Roger Federer</h4>
+                                    <div class="player-stats">
+                                        <span class="stat">20 Grand Slams</span>
+                                        <span class="stat">310 weeks at #1</span>
+                                    </div>
+                                    <p class="player-description">The "Swiss Maestro" redefined tennis elegance with his fluid movement and shot-making. His all-court game and longevity set new standards for the sport.</p>
+                                    <div class="playing-style">
+                                        <strong>Signature:</strong> One-handed backhand, footwork, shot variety
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="player-card">
+                                <div class="player-image">
+                                    <div class="player-silhouette rafael-nadal"></div>
+                                </div>
+                                <div class="player-info">
+                                    <h4>Rafael Nadal</h4>
+                                    <div class="player-stats">
+                                        <span class="stat">22 Grand Slams</span>
+                                        <span class="stat">14 French Open titles</span>
+                                    </div>
+                                    <p class="player-description">"Rafa" revolutionized tennis with his topspin-heavy game and incredible work ethic. His dominance on clay and fighting spirit define modern tennis.</p>
+                                    <div class="playing-style">
+                                        <strong>Signature:</strong> Heavy topspin, court coverage, mental toughness
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="player-card">
+                                <div class="player-image">
+                                    <div class="player-silhouette novak-djokovic"></div>
+                                </div>
+                                <div class="player-info">
+                                    <h4>Novak Djokovic</h4>
+                                    <div class="player-stats">
+                                        <span class="stat">24 Grand Slams</span>
+                                        <span class="stat">400+ weeks at #1</span>
+                                    </div>
+                                    <p class="player-description">"Nole" perfected the modern baseline game with his flexibility, return skills, and mental strength. His all-surface dominance defines the current era.</p>
+                                    <div class="playing-style">
+                                        <strong>Signature:</strong> Return of serve, flexibility, two-handed backhand
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brands" class="brands-section">
+            <div class="container">
+                <h2 class="section-title">Tennis Equipment: The Tools of Champions</h2>
+                <p class="section-subtitle">Understanding the equipment that shapes modern tennis</p>
+                
+                <div class="brands-overview">
+                    <div class="brand-category">
+                        <h3>Racket Manufacturers</h3>
+                        <div class="brands-grid">
+                            <div class="brand-card">
+                                <div class="brand-logo wilson"></div>
+                                <h4>Wilson</h4>
+                                <div class="brand-info">
+                                    <p><strong>Founded:</strong> 1913</p>
+                                    <p><strong>Signature Series:</strong> Pro Staff, Blade, Clash</p>
+                                    <p><strong>Notable Players:</strong> Roger Federer, Serena Williams, Stefanos Tsitsipas</p>
+                                </div>
+                                <p class="brand-description">Wilson's Pro Staff series, used by Federer, represents precision and control. Their rackets are known for excellent feel and traditional playing characteristics.</p>
+                            </div>
+                            
+                            <div class="brand-card">
+                                <div class="brand-logo babolat"></div>
+                                <h4>Babolat</h4>
+                                <div class="brand-info">
+                                    <p><strong>Founded:</strong> 1875</p>
+                                    <p><strong>Signature Series:</strong> Pure Drive, Pure Aero, Pure Strike</p>
+                                    <p><strong>Notable Players:</strong> Rafael Nadal, Carlos Alcaraz, Garbiñe Muguruza</p>
+                                </div>
+                                <p class="brand-description">Babolat revolutionized tennis with the Pure Drive, introducing power and spin to the modern game. Their rackets excel in baseline play and topspin generation.</p>
+                            </div>
+                            
+                            <div class="brand-card">
+                                <div class="brand-logo head"></div>
+                                <h4>Head</h4>
+                                <div class="brand-info">
+                                    <p><strong>Founded:</strong> 1950</p>
+                                    <p><strong>Signature Series:</strong> Prestige, Speed, Radical</p>
+                                    <p><strong>Notable Players:</strong> Novak Djokovic, Andy Murray, Coco Gauff</p>
+                                </div>
+                                <p class="brand-description">Head's Prestige series offers exceptional control and precision. Their rackets are favored by players who prioritize accuracy and feel over raw power.</p>
+                            </div>
+                            
+                            <div class="brand-card">
+                                <div class="brand-logo yonex"></div>
+                                <h4>Yonex</h4>
+                                <div class="brand-info">
+                                    <p><strong>Founded:</strong> 1946</p>
+                                    <p><strong>Signature Series:</strong> EZONE, VCORE, VCPRO</p>
+                                    <p><strong>Notable Players:</strong> Stan Wawrinka, Naomi Osaka, Nick Kyrgios</p>
+                                </div>
+                                <p class="brand-description">Yonex brings Japanese precision to tennis rackets. Their innovative technology focuses on power, comfort, and spin generation for aggressive players.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="brand-category">
+                        <h3>String Technology</h3>
+                        <div class="strings-info">
+                            <div class="string-type">
+                                <h4>Natural Gut</h4>
+                                <p>The gold standard for feel and power. Used by many professionals despite its cost. Offers excellent playability but requires frequent restringing.</p>
+                            </div>
+                            <div class="string-type">
+                                <h4>Polyester (Poly)</h4>
+                                <p>Modern choice for spin and control. Durable and maintains tension well. Used by most professional players for its spin potential and control.</p>
+                            </div>
+                            <div class="string-type">
+                                <h4>Multifilament</h4>
+                                <p>Comfortable alternative to natural gut. Good power and feel with better durability. Popular among recreational players seeking comfort.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="brand-category">
+                        <h3>Court Surfaces & Equipment</h3>
+                        <div class="surface-info">
+                            <div class="surface-card">
+                                <h4>Hard Courts</h4>
+                                <p><strong>Speed:</strong> Medium-Fast</p>
+                                <p><strong>Bounce:</strong> Consistent, medium-high</p>
+                                <p><strong>Characteristics:</strong> Favor aggressive baseline play, good for all playing styles</p>
+                            </div>
+                            <div class="surface-card">
+                                <h4>Clay Courts</h4>
+                                <p><strong>Speed:</strong> Slow</p>
+                                <p><strong>Bounce:</strong> High, irregular</p>
+                                <p><strong>Characteristics:</strong> Favor topspin, endurance, and tactical play</p>
+                            </div>
+                            <div class="surface-card">
+                                <h4>Grass Courts</h4>
+                                <p><strong>Speed:</strong> Fast</p>
+                                <p><strong>Bounce:</strong> Low, irregular</p>
+                                <p><strong>Characteristics:</strong> Favor serve-and-volley, quick points, aggressive play</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="grips" class="grips-section">
+            <div class="container">
+                <div class="grip-mastery">
+                    <h2 class="section-title">Master the Art of Grip</h2>
+                    <p class="section-subtitle">Each grip is a brushstroke in your tennis masterpiece</p>
+                    
+                    <div class="grip-showcase">
+                        <div class="grip-demo">
+                            <div class="racket-3d">
+                                <div class="racket-head"></div>
+                                <div class="racket-shaft"></div>
+                                <div class="racket-handle-3d">
+                                    <div class="handle-bevels">
+                                        <div class="bevel-3d" data-grip="continental"></div>
+                                        <div class="bevel-3d" data-grip="eastern"></div>
+                                        <div class="bevel-3d" data-grip="semi-western"></div>
+                                        <div class="bevel-3d" data-grip="western"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grip-selector">
+                                <button class="grip-btn active" data-grip="continental">Continental</button>
+                                <button class="grip-btn" data-grip="eastern">Eastern</button>
+                                <button class="grip-btn" data-grip="semi-western">Semi-Western</button>
+                                <button class="grip-btn" data-grip="western">Western</button>
+                            </div>
+                        </div>
+                        
+                        <div class="grip-details">
+                            <div class="grip-info-panel">
+                                <h3 id="selected-grip-name">Continental Grip</h3>
+                                <div class="grip-visualization">
+                                    <div class="hand-grip" id="hand-grip">
+                                        <div class="thumb-position"></div>
+                                        <div class="index-knuckle"></div>
+                                    </div>
+                                </div>
+                                <div class="grip-attributes">
+                                    <div class="attribute">
+                                        <span class="attr-label">Difficulty:</span>
+                                        <div class="difficulty-bar">
+                                            <div class="difficulty-fill" style="width: 40%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="attribute">
+                                        <span class="attr-label">Topspin:</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 20%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="attribute">
+                                        <span class="attr-label">Power:</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p id="selected-grip-description">The universal grip for serves, volleys, and overheads. Like shaking hands with the racket.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="game" class="game-section">
+            <div class="container">
+                <h2 class="section-title">🎮 Grip Master Game</h2>
+                <p class="section-subtitle">Test your knowledge of tennis grips with this interactive mini-game!</p>
+                
+                <div class="game-container">
+                    <div class="game-header">
+                        <div class="score-display">
+                            <span class="score-label">Score:</span>
+                            <span id="score">0</span>
+                        </div>
+                        <div class="level-display">
+                            <span class="level-label">Level:</span>
+                            <span id="level">1</span>
+                        </div>
+                        <div class="streak-display">
+                            <span class="streak-label">Streak:</span>
+                            <span id="streak">0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="game-content">
+                        <div class="question-area">
+                            <h3 id="question-text">What grip is best for this situation?</h3>
+                            <div class="situation-card" id="situation-card">
+                                <div class="situation-icon" id="situation-icon">🎾</div>
+                                <p id="situation-text">You're a beginner learning your first forehand shot</p>
+                            </div>
+                        </div>
+                        
+                        <div class="options-area">
+                            <div class="grip-options" id="grip-options">
+                                <!-- Options will be populated by JavaScript -->
+                            </div>
+                        </div>
+                        
+                        <div class="game-feedback" id="game-feedback">
+                            <div class="feedback-content" id="feedback-content"></div>
+                            <button class="next-question-btn" id="next-question-btn" style="display: none;">Next Question</button>
+                        </div>
+                    </div>
+                    
+                    <div class="game-controls">
+                        <button class="start-game-btn" id="start-game-btn">Start Game</button>
+                        <button class="reset-game-btn" id="reset-game-btn" style="display: none;">Reset Game</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="tips-section">
+            <div class="container">
+                <h2 class="section-title">Pro Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>🎯 Grip Selection</h3>
+                        <p>Start with Eastern forehand and Continental for serves. As you improve, experiment with Semi-Western for more topspin.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>💪 Grip Pressure</h3>
+                        <p>Hold the racket like you're holding a bird - firm enough so it doesn't fly away, but gentle enough not to hurt it.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🔄 Grip Changes</h3>
+                        <p>Learn to change grips quickly between shots. Practice switching from forehand to backhand grip during rallies.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>📏 Grip Size</h3>
+                        <p>Choose the right grip size. You should be able to fit your index finger between your palm and fingertips when gripping.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tennis Pro. Learn, practice, and master your tennis game!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
